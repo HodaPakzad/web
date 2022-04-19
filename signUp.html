@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Focuse Order </title>
+    <style>
+       input:out-of-range {
+  border: 2px solid red;
+}
+      
+       
+    </style>
+</head>
+<body bgcolor="#Ffffff" text="000000" align="center">
+    <form action="actionUrl" method="post">
+    <fieldset>
+    <legend>Person information</legend>
+    User name : <br/>
+    <input type="text" name="user" minlength="4" maxlength="6" required>
+    <br/>
+    Password: <br/>
+    <input type="password" name="user"  minlength="4" maxlength="7" required>
+    <br/>
+    Email Address :<br/>
+    <input type ="text" name ="email" size="20"
+    tabindex="6">
+    <br/>
+    Do you want to participate in our manual meetting ?<br/>
+
+    <input type="radio" name="radio-yes" value="yes"
+   >
+    Yes<br/>
+    <input type="radio" name="radio-no" value="no"
+    >
+    No <br/>
+    Select your favorite doctrine in Yuga : <br/>
+    <select name="select" tabindex="3">
+    <option>Hashtanga </option>
+    <option>hata</option>
+    <option>Anursana</option>
+    </select>
+    <br/>
+    <br/>
+    <input type="submit" name="submit" value="submit"
+    tabindex="2">
+    <input type="reset" name="submit" value="reset"
+    tabindex="1">
+    </fieldset>
+    </form>
+    </body>
+    </html>

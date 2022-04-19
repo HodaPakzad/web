@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-aquiv="X-UA-Compatable" content="IE-edge">
+        <meta name="viewport" content="with-device-width, initial-scale=1.0">
+        <link rel="Stylesheet" type="text/css"  href="style.css"/>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>This is my first project</title>
+        <style>
+  @media screen and(min-width:600px){
+    body > div{
+      font-size: 80px;
+    }
+  }       
+  @media screen and(max-width:600px) {
+    body > div{
+    font-size: 30px;
+    }
+  }
+  body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* The Modal (background) */
+    .modal {
+      font-size: 12px;
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 30%;
+      height: 35%;
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+ hr{
+
+height:2px;
+width:100%;
+color:rgb(20, 18, 18);
+background-color:rgb(56, 53, 53);
+}
+.item1{ grid-area:header;}
+.item2{ grid-area:menu1;}
+.item3{ grid-area:menu2; }
+.item4{ grid-area:item1; }
+.item5{ grid-area:item2; }
+.item6{ grid-area:item3; }
+.item7{ grid-area:item4; }
+.item8{ grid-area:item5; }
+.item9{ grid-area:item6; }
+
+.grid-container {
+ display: inline-grid;
+    grid-template-areas:
+    'header header header header'
+    'menu1 item1 item2 item3'
+    'menu2 item4 item5 item6';
+    gap: 10px;
+    background-color :rgb(140, 167, 216);
+    padding :10px;
+} 
+.grid-container > div {
+     background-color :rgb(74, 110, 177);
+     text-align:center;
+     padding :20px 0;
+     font-size :30px;
+ }
+
+.flex-container {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+justify-content: center;
+  display: flex;
+  flex-wrap:wrap;
+
+  background-color:rgb(140, 167, 216);
+}
+.flex-container > div{
+  background-color:#ddd;
+  border-radius: 20%;
+  width: auto;
+  margin:30px;
+  text-align:center;
+  line-height:50px;
+  font-size:30px;
+}
+.an div{
+ padding-top: 15px;
+ padding-bottom: 12px;          
+  width: 130px;
+  height: 30px;
+  background-color: rgb(140, 167, 216);
+  font-weight: bold;
+  position: relative;
+  animation: mymove 20s infinite;
+  border-radius: 50%;
+  font-size: smaller;
+}
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 990px;}
+}
+.mask {
+    margin-left: 17%;
+    width: 70%;
+  height:70%;
+ -webkit-mask-box-image: url("Yoga-PNG-Transparent.png");
+  mask-image: url("Yoga-PNG-Transparent.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+ 
+}
+.mask img {
+  width: 100%;
+  height: 5%;
+}
+   
+
+.navbar {
+   
+  overflow: hidden;
+  background-color: rgb(140, 167, 216);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar  a {
+  float: left;
+  display: block;
+ color:black ;
+  text-align: center;
+  padding: 18px 19px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+          } 
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+          }
+          div{
+                  font-style:normal;
+                  font-size: larger;
+          }
+          div p{
+            font-size:16px;
+          }
+          #id1{
+            text-align: right;
+          }
+         #id2{
+             text-align: left;
+             text-shadow: 3px 3px cyan;
+             font-size:16px;
+         }
+         #id3 {
+    border-radius: 50%;
+    }
+         a:link {
+  color:red;
+}
+
+a:visited {
+  color: purple;
+}
+
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: yellow;
+} 
+       
+        </style>
+    </head>
+    <body 
+          bgcolor="white"
+          text="black"
+          link="red"
+          vlink="purple"
+          leftmargin="50"
+          topmargin="20"
+          align="center"
+          
+        >
+
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#Courses">Courses</a>
+    <a href="#Tutorial">Tutorial</a>
+    <a href="#Shop">Shop</a>
+    <a href="#contact">Contact</a>
+  </div>
+<br>
+  
+ 
+        <h1 style="padding-left:7%; padding-top:5%">Meditation</h1>
+       
+       
+      
+        <!-- The Modal -->
+        
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+  <form action="actionURL" method="POST" autocomplete="on"  class="needs-validation" novalidate>       
+    <lable for="UserName" align="rtl">UserName</lable><br>
+    <input type = "text"  size="20" tabindex="7" id="last Name" name="last Name" required><br>
+     
+    <lable for="email" align="rtl" required >Password</lable><br>
+    <input type = "text"  size="20" tabindex="7" id="email" name="Password" required><br>
+
+    <lable for="email" align="rtl" required >e-maile</lable><br>
+    <input type = "text"  size="20" tabindex="7" id="email" name="email" required><br>
+  
+    <label class="form-check-label"></label>
+      <input class="form-check-input" type="checkbox" name="remember" required> remember me!.<br>
+   
+  </form>
+    <pre>  
+   <a href="#" >Signe In</a>              <a href="form.html" >Signe Up</a>
+   <a href="#" >forgort password?</a><br>
+     </pre>
+
+          </div>
+        
+        </div>
+  
+      
+        <div id="id1"> <button id="myBtn" >Login</button></div>
+        <br>
+        <div id="id1">
+        <label for="search">search</label>
+        <input type="search" size="10">
+        </div>
+       
+        <div class="mask">
+            <img  src="SargassoSea-1.jpg" alt="yuga">
+        </div>
+        
+        <h2>What is meditation?</h2>
+        
+        
+       
+       <br>
+        <details>
+            <summary>a little note!</summary>
+         
+            <p>you are welcome to the world of calmness and power!</p>
+            </details>
+            <div>
+                <h4><i><b>meditation</b></i> is a simple practice available to 
+           all, which can reduce stress, increase <i><b>calmeness</b></i>
+            and clarity and promote happiness. Learning how
+             to  <i><b>meditation</b></i> is straightforward, and the benefits
+            can come quickly. Here, we offer basic tips to 
+            get you started on a path toward greater equanimity,
+             acceptance and joy. Take a deep breath, and get ready 
+             to relax.<br>consider you have about x time energy to live your daily life
+            ,so with meditation it will be 10 time more: X<sup>10</sup>.</h4>
+           
+            <div id="id1"><p><q cite="www.wikipaedia.com" > Edit by David Jones</q></p><br/></div>
+        </div>
+        
+        <div>
+
+            <h3 align="center">some more information about meditation</h3>
+             Here there are a book i really like you know about it : <cit id="id2"><i><b>"Whenever you go,there you are"</b></i></cit>
+              In mindfulness meditation, we’re learning how to pay attention to the breath as it
+              goes in and out, and notice when the mind wanders from this task. This practice of returning to the breath builds 
+              the muscles of attention and mindfulness.
+             When we pay attention to our breath, we are learning how to return to, and remain in, the present
+          moment—to anchor ourselves in the here and now on purpose, without judgement.
+         The idea behind mindfulness seems simple—the practice takes patience. Indeed, renowned meditation teacher Sharon
+         Salzberg recounts that her first experience with meditation showed her how quickly the mind gets caught up in other tasks. “I thought, okay, what will it be, like, 800 breaths before my mind starts to wander? And to my absolute amazement, it was one breath, and I’d be gone,” says Salzberg.
+           <br>
+        In order to know more about meditation you 
+            can visit this website :
+        <a href="https://www.nytimes.com/guides/well/how-to-meditate" >mindful.org</a>
+       
+    </div>
+       <br>
+    <div>
+       <h3 align="center">Who to clean your chacras? </h3>
+       as you know there are 7 main chacras in our body . and each one has a special kind 
+       of duty to keep our body in balance.<br>Chakras have only recently become more well-known, 
+       with the growth in popularity of yoga and New Age philosophies in general. They are a complex
+       and ancient energy system that originated in India. They were first mentioned in the Vedas, 
+       ancient sacred texts of spiritual knowledge dating from 1500 to 1000 BC. There’s a lot one can study about them.
+        So what should you know about the chakras? Below is your crash course.
+       are 7chakras in our body:<br>
+       <div id="id2">
+      Top three ones: 
+       <ol type="1" size="5"> 
+                    <li>Crown</li>
+                    <li>Third Eye</li>
+                    <li>Throat</li>
+        </ol> 
+        Down three ones:     
+        <ol start="4">      
+                    <li>Heart</li>
+                    <Li>Solar Plexus</Li>
+                    <li>Root</li>
+   
+       </ol>
+    </div>
+    </div>
+    <div class="grid-container">
+      <div class="item1">Chakras</div>
+      <div class="item2">up</div>
+      <div class="item3">dowm</div>
+      <div class="item4" style="background-color:rgb(243, 181, 202);" >Crown</div>
+      <div class="item5" style="background-color:rgb(161, 28, 161);">Third Eye</div>
+      <div class="item6" style="background-color:DodgerBlue;">Throat</div>
+      <div class="item7" style="background-color:MediumSeaGreen;">Heart</div>
+      <div class="item8"  style="background-color:yellow;">Solar Plexus</div>
+      <div class="item9" style="background-color:Tomato;">Root</div>
+
+  </div>
+        <figure>
+            <img id="id3" src="meditation.png" alt="chakras" border="5">
+            <figcaption>   7 main chakras</figcaption>
+            <audio controls autoplay >
+                <source src="0bikalam download1music.ir (1).ogg" type="audio/ogg">
+                <source src="0bikalam download1music.ir (1).mp3" type="audio/mpeg">
+            </audio>
+            <br><br><br>
+            <table align="center" >
+         <tr>      
+         <td >chakras Name</td>
+         <td style="background-color:rgb(243, 181, 202);">Crown Chakra</td>
+         <td style="background-color:rgb(161, 28, 161);">Third Eye Chakra</td> 
+         <td style="background-color:DodgerBlue;">Throat Chakra</td> 
+         <td style="background-color:MediumSeaGreen;">Heart Chakra</td> 
+         <td style="background-color:yellow;">Solar Plexus Chakra</td> 
+         <td style="background-color:Tomato;">Root Chakra</td> 
+        </tr>
+       
+</table> 
+<div>
+<p>in order to see the courses timetable click<a href = "coursestimetable.html"> here </a> </p>
+<hr>
+<h3>In order to participate our other courses</h3>
+ <p>Here there are courses of other sportif branches you can check them.It will be our pleasure to be at your service 
+   As you know each sport is not suitable for everyone and it is important to be aware of your your body needs.for 
+   example you can try som some different
+   sport for a while and then choose one and continue it for ever.Be careful it will be neccessary not to leave 
+   the sport which you choose it till you are alive .In order to be in Contact
+   with us you can be member of our channel of telegram. </p>  
+      
+ <div class="an">     
+<div id="div1"><a href="#Pilaties">Pilaties</a></div>
+<div id="div2"><a href="#Fitness">Fitness</a></div>
+<div id="div3"><a href="#BodyBuilding">BodyBuilding</a></div>
+<div id="div4"><a href="#T-Rx">T-Rx</a></div>
+<div id="div5"><a href="#C-X">C-X</a></div>
+</div> 
+<hr>
+</div>
+<div>
+  <h4>More Tips On Going Deeper</h4>
+  <p>needed tools for youga</p>
+  <div class="flex-container">
+    <div>Yuga Matte</div>
+    <div>Yuga corde</div>
+    <div>Yuga shirt</div>
+    <div>Yuga pants</div>
+    <div>Yuga breack</div>
+  </div>
+</div>
+<br>
+<hr>
+<br>
+<div style="margin-left:0%; overflow: hidden;" >
+<pre style="overflow: hidden;">
+Menue of our courses                  Usful Sites
+Contact us                            Shop
+</div>
+</pre>
+        <address>visit us at:@tm/hp.meditate
+         Ferdouce gymnase.
+         Fereshteh av.
+         </address>
+
+         <script>
+          window.alert("Welcome to our website!");
+         
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+          </script>
+
+    </body>
+</html>
